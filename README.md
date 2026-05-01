@@ -38,7 +38,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/ambikamishra03/devChallenges/blob/main/resources/result.jpg)
 
 This project is a simple interactive Flip the Coin web application where users can simulate a coin toss by clicking a button. The UI updates dynamically to display either Heads or Tails along with corresponding visuals. It focuses on DOM manipulation, event handling, and clean UI structuring using HTML, CSS, and JavaScript.
 
