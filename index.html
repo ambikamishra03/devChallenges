@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+  <title>Flip the coin | devChallenges.io</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      color: #ECEDF0;
+      background: #404A65;
+    }
+
+    .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+    }
+
+    .author-info a {
+      text-decoration: none;
+    }
+
+    .parent {
+      padding: 25px;
+      text-align: center;
+      display: block;
+    }
+
+    .heading {
+      padding: 55px;
+      font: 400;
+    }
+
+    #large-h {
+      text-shadow: 2px 2px 0px #35383f;
+    }
+
+    #btn {
+      box-shadow: 0px 4px 0px 0px #23649b;
+      padding: 10px 20px;
+      margin: 4%;
+      background-color: #1F6FB0;
+      border: none;
+      color: #ECEDF0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .coin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .shadow {
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="heading">
+      <h1 id="large-h">Flip the Coin</h1>
+      <h3 id="small-h">Press the coin or the button to flip the coin</h3>
+    </div>
+    <div class="coin">
+      <img src="./resources/heads.svg" alt="" class="visible" id="headImg">
+      <img src="./resources/tails.svg" alt="" class="hidden" id="tailImg">
+    </div>
+    <img src="./resources/shadow.svg" alt="" class="shadow">
+    <div class="desc">
+      <h3 class="visible" id="headTxt">Head</h3>
+      <h3 class="hidden" id="tailTxt">Tail</h3>
+    </div>
+
+    <button id="btn" onclick="toggleImage()">RANDOM</button>
+  </div>
+
+  <!-- <div class="author-info">
+      Coded by <a href="#">Ambika Mishra</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      > -->
+  </div>
+</body>
+<script>
+  let isHeadVisible = true;
+  function toggleImage() {
+    const headImg = document.getElementById("headImg");
+     const tailImg = document.getElementById("tailImg");
+      const headTxt = document.getElementById("headTxt");
+       const tailTxt = document.getElementById("tailTxt");
+      if (isHeadVisible) {
+        headImg.classList.replace("visible","hidden");
+        tailImg.classList.replace("hidden","visible");
+        headTxt.classList.replace("visible","hidden");
+        tailTxt.classList.replace("hidden","visible");
+      }else{
+        tailImg.classList.replace("visible","hidden");
+        headImg.classList.replace("hidden","visible");
+        tailTxt.classList.replace("visible","hidden");
+        headTxt.classList.replace("hidden","visible");
+      }
+      isHeadVisible = !isHeadVisible;
+  }
+</script>
+
+</html>
