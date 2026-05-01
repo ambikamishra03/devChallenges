@@ -84,5 +84,5 @@ Thanks to open-source documentation and learning platforms for guidance
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://github.com/ambikamishra03/)
+<!-- - Website [your-website.com](https://{your-web-site-link}) -->
+- GitHub [@ambikamishra03](https://github.com/ambikamishra03/)
